@@ -53,4 +53,7 @@ class Genre {
     }
 }
 
-   
+$movie1 = new Movie("Harrylobster", "Germano Mosconi", 1976, "Comedy");
+$movie2 = new Movie("Roma", "Francesco Totti", 1927, "Novel");  
+echo "<p>" . $movie1->getTitle() . " (" . $movie1->getYear() . ") directed by " . $movie1->getDirector() . ", genre: " . $movie1->getGenre() . "</p>";
+echo "<p>" . $movie2->getTitle() . " (" . $movie2->getYear() . ") directed by " . $movie2->getDirector() . ", genre: " . $movie2->getGenre() . "</p>";
