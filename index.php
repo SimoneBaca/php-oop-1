@@ -19,17 +19,30 @@ class Movie {
     public $year;
     public $genre;
 
-    public function __construct( string $title, string  $director, string  $year, string  $genre = 'Commedy') 
-    {
+    public function __construct($title, $director, $year, $genre) {
         $this->title = $title;
         $this->director = $director;
         $this->year = $year;
         $this->genre = $genre;
     }
-}
-    
-    class Genre
-    {
-        
+
+    public function getTitle() {
+        return $this->title;
     }
+
+    public function getDirector() {
+        return $this->director;
+    }
+
+    public function getYear() {
+        return $this->year;
+    }
+
+    public function getGenre() {
+        return $this->genre;
+    }
+}
+class Genre {
     
+   
+}
